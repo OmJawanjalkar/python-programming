@@ -27,3 +27,7 @@ is_pass = True
 Number_1 = float(input('Enter the first number: '))
 Number_2 = float(input('Enter the second number: '))
 print(Number_1*Number_2)
+
+Number_1 = float(input('Enter the first number: '))
+Number_2 = float(input('Enter the second number: '))
+print(Number_1*Number_2)
