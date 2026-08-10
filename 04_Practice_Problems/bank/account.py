@@ -54,8 +54,8 @@ class Account(ABC):
     def get_balance(self):
         return self._balance
       
-        def add_transaction(self, transaction):
-        self.transactions.append(transaction)
+    def add_transaction(self, transaction):
+      self.transactions.append(transaction)
 
     def show_transactions(self):
 
