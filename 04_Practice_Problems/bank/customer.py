@@ -1,21 +1,27 @@
 class Customer:
+
+    # Class variable
+    customer_counter = 1000
+
     def __init__(self, name, email, phone):
-        
+
         Customer.customer_counter += 1
-        
-        self.customer_id = f"CUST{Customer.customer_counter}"
-        
-        self.name = name 
+
+        self.customer_id = (
+            f"CUST{Customer.customer_counter}"
+        )
+
+        self.name = name
         self.email = email
         self.phone = phone
-        
+
+        # Composition
         self.accounts = []
-        
-        
-    def addaccount(self, account):
-        
+
+    def add_account(self, account):
+
         self.accounts.append(account)
-        
+
     def show_accounts(self):
 
         if not self.accounts:
